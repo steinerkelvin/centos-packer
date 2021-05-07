@@ -14,7 +14,7 @@ source "qemu" "centos7" {
   ssh_timeout       = "20m"
 
   shutdown_command  = "echo 'packer' | sudo -S shutdown -P now"
-  boot_wait         = "5s"
+  boot_wait         = "10s"
   boot_command      = ["<tab> text ks=http://{{ .HTTPIP }}:{{ .HTTPPort }}/centos7-ks.cfg<enter><wait>"]
 
   # output_directory  = "output_centos"
