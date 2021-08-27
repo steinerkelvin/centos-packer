@@ -22,7 +22,7 @@ source "qemu" "centos7" {
 }
 
 locals {
-  image_sizes = [4, 8]
+  image_sizes = [8]
 }
 
 local "root_pass" {
